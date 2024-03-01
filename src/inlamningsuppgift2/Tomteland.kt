@@ -41,11 +41,12 @@ class Tomteland {
 
     }
 
-    fun main() {
 
-        var list: MutableList<String> = mutableListOf()
-        println(getUnderlings("Räven", list))
+}
 
-    }
+fun main() {
+    val tl = Tomteland()
+    var list: MutableList<String> = mutableListOf()
+    println(tl.getUnderlings("Räven", list))
 
 }
