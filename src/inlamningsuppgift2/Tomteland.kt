@@ -28,9 +28,9 @@ class Tomteland {
         myran to listOf(bladlusen)
     )
 
-    fun getUnderlings(currentName: String, underlings: MutableList<String>): MutableList<String> {
+    fun getUnderlings(currentName: String, underlings: MutableList<String>): List<String> {
 
-        tailrec fun addUnderlings(name: String, underlings: MutableList<String>, indexNr: Int): MutableList<String> {
+        tailrec fun addUnderlings(name: String, underlings: MutableList<String>, indexNr: Int): List<String> {
             hierarkin[name]?.forEach { t -> underlings.add(t) }
 
             return if (indexNr == underlings.size) underlings
