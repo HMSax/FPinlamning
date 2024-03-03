@@ -1,42 +1,25 @@
 package inlamningsuppgift1.aoc2017day8
-
 import java.io.File
 
-//"b inc 5 if a > 1",
 class aoc2017day8 {
 
     fun findValue(registerList: List<String>): Int {
+
         val regListWithValues = mutableMapOf<String, Int>()
-        val splitter = """\s+""".toRegex()
 
         fun tryIfTrue(reg: String, con: String, numb: Int): Boolean {
             when (con) {
-                "<" -> {
-                    if (regListWithValues.getValue(reg) < numb) return true
-                }
-
-                ">" -> {
-                    if (regListWithValues.getValue(reg) > numb) return true
-                }
-
-                "==" -> {
-                    if (regListWithValues.getValue(reg) == numb) return true
-                }
-
-                "!=" -> {
-                    if (regListWithValues.getValue(reg) != numb) return true
-                }
-
-                "<=" -> {
-                    if (regListWithValues.getValue(reg) <= numb) return true
-                }
-
-                ">=" -> {
-                    if (regListWithValues.getValue(reg) >= numb) return true
-                }
+                "<" -> { if (regListWithValues.getValue(reg) < numb) return true }
+                ">" -> { if (regListWithValues.getValue(reg) > numb) return true }
+                "==" -> { if (regListWithValues.getValue(reg) == numb) return true }
+                "!=" -> { if (regListWithValues.getValue(reg) != numb) return true }
+                "<=" -> { if (regListWithValues.getValue(reg) <= numb) return true }
+                ">=" -> { if (regListWithValues.getValue(reg) >= numb) return true }
             }
             return false
         }
+
+        val splitter = """\s+""".toRegex()
 
         registerList.forEach {
             val splitRow = it.split(splitter).toList().map { it }
@@ -57,6 +40,7 @@ class aoc2017day8 {
                     regListWithValues[splitRow[0]] = oldVal.minus(changeVal)
                 }
             }
+
         }
 
         val highestValue = regListWithValues.values.max()
