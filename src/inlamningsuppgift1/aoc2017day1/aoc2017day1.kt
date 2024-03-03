@@ -1,7 +1,6 @@
 package inlamningsuppgift1.aoc2017day1
 
 import java.io.File
-import java.util.Scanner
 
 class aoc2017day1 {
 
