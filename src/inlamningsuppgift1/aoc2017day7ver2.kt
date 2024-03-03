@@ -1,7 +1,7 @@
 package inlamningsuppgift1
-
-
 import java.io.File
+
+//this solution was inspired by https://todd.ginsberg.com/post/advent-of-code/2017/day7/
 
 class aoc2017day7ver2 {
 
