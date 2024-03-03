@@ -1,11 +1,10 @@
-package inlamningsuppgift1
-
+package inlamningsuppgift1.aoc2017day7
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
-class Aoc2017Day7ver2KtTest {
+class Aoc2017Day7KtTest {
 
-    val findtowerTest2 = aoc2017day7ver2()
+    val findtowerTest = aoc2017day7()
 
     val towerTestList: List<String> = listOf(
         "pbga (66)",
@@ -25,7 +24,7 @@ class Aoc2017Day7ver2KtTest {
 
     @Test
     fun findBottomTowerTest() {
-        val bottomTower = findtowerTest2.findBottomTower(towerTestList)
+        val bottomTower = findtowerTest.findBottomTower(towerTestList)
         assertEquals(bottomTower, "tknk")
     }
 }

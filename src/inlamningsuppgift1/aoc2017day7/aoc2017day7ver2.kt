@@ -1,4 +1,4 @@
-package inlamningsuppgift1
+package inlamningsuppgift1.aoc2017day7
 import java.io.File
 
 //this solution was inspired by https://todd.ginsberg.com/post/advent-of-code/2017/day7/

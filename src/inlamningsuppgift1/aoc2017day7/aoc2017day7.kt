@@ -1,5 +1,4 @@
-package inlamningsuppgift1
-
+package inlamningsuppgift1.aoc2017day7
 import java.io.File
 
 class aoc2017day7 {
