@@ -19,6 +19,22 @@ class aoc2017day4 {
         return validSum
     }
 
+    fun getValidPassAmount2(passList: List<List<String>>): Int {
+        var validSum = 0
+        passList.forEach { t ->
+            val tSorted = t.map{p -> p.toCharArray().sorted().joinToString("")}
+            val tSorted2 = tSorted.sorted()
+            var tempBool = true
+            for (x in 0..t.size - 2) {
+                if (tSorted2[x] == tSorted2[x + 1]) {
+                    tempBool = false
+                    break}
+            }
+            if (tempBool) validSum++
+        }
+        return validSum
+    }
+
 }
 
 fun main() {
@@ -30,6 +46,7 @@ fun main() {
     val ingoingList = passPhrases.map { splitter.findAll(it).toList().map { it.value } }
 
     println(upg5.getValidPassAmount(ingoingList))
-    //println(upg5.getValidPassAmount(ingoingList))
+
+    println(upg5.getValidPassAmount2(ingoingList))
 
 }

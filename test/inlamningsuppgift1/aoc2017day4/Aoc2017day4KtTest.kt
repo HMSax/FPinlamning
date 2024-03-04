@@ -17,11 +17,16 @@ class Aoc2017day4KtTest {
         val testSum = thistest.getValidPassAmount(testList)
         assertEquals(2, testSum)
     }
-
-    /* @Test
+    @Test
     fun getChecksum2Test(){
-        val testSum2 = thistest.getChecksum2(testsheet2)
-        assertEquals(9, testSum2)
-    }*/
+        testList.add(listOf("abcde", "fghij"))
+        testList.add(listOf("abcde", "xyz", "ecdab"))
+        testList.add(listOf("a", "ab", "abc", "abd", "abf", "abj"))
+        testList.add(listOf("iiii", "oiii", "ooii", "oooi", "oooo"))
+        testList.add(listOf("oiii", "ioii", "iioi", "iiio"))
+
+        val testSum = thistest.getValidPassAmount2(testList)
+        assertEquals(3, testSum)
+    }
 
 }
