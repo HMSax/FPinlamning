@@ -11,7 +11,7 @@ class aoc2017day7ver2 {
         val splitter = """\w+""".toRegex()
 
         towerList.forEach {
-            val splitRow = splitter.findAll(it).toList().map {it.value}
+            val splitRow = splitter.findAll(it).toList().map { it.value }
             parentList.add(splitRow[0])
             splitRow.drop(2).forEach {childList.add(it)}
         }

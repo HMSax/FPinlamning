@@ -1,4 +1,5 @@
 package inlamningsuppgift1.aoc2017day7
+
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

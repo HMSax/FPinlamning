@@ -46,9 +46,7 @@ class aoc2017day8ver2 {
 
         }
 
-        val highestValue = regListWithValues.values.max()
-
-        return highestValue
+        return regListWithValues.values.max()
     }
 }
 
