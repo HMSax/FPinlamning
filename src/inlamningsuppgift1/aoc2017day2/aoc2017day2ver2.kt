@@ -31,7 +31,6 @@ fun main() {
 
     spreadSheet.forEach {
         val myIntList = splitter.findAll(it).toList().map { it.value.toInt() }
-        println(myIntList)
         ingoingList.add(myIntList)
     }
 
