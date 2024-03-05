@@ -21,7 +21,7 @@ class aoc2017day7 {
 fun main() {
     val upg = aoc2017day7()
 
-    val towerList: List<String> = File("src/inlamningsuppgift1/towerData.txt").readLines()
+    val towerList: List<String> = File("src/inlamningsuppgift1/aoc2017day7/towerData.txt").readLines()
 
     println(upg.findBottomTower(towerList))
 
